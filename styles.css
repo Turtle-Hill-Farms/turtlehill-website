@@ -42,6 +42,7 @@ ul {
 h1 {
   font-size: 5em;
   font-style: italic;
+  padding-left: 60px;
 }
 
 li {
