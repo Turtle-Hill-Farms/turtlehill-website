@@ -21,6 +21,10 @@ div.main {
   margin: auto;
 }
 
+#navicon {
+  display: none;
+}
+
 img {
   width: 80%;
   /* margin-left: 10%;
@@ -31,6 +35,7 @@ img {
 
 img.section-image_fullSize {
   border-radius: 5px;
+  margin-top: 11%;
 }
 
 div.navigationBar {
@@ -39,6 +44,11 @@ div.navigationBar {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+a.navigationBar-links {
+  text-decoration: none;
+  color: white;
 }
 
 div#navigationBar-logo {
@@ -80,6 +90,14 @@ div.section {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+#servicesSection {
+  flex-direction: row-reverse;
+  width: 100%;
+  display: flex;
   flex-wrap: nowrap;
   margin-top: 50px;
 }
@@ -215,5 +233,66 @@ body {
 @media only screen and (max-width: 600px) {
   div.section {
     flex-direction: column;
+  }
+
+  html {
+    width: 100vw;
+  }
+
+  #servicesSection {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  div#section-words {
+    width: 100%;
+  }
+
+  div#section-image {
+    width: 100%;
+  }
+  #section-image_caption {
+    display: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  a#navicon {
+    display: block;
+    width: 50%;
+  }
+
+  img#navicon {
+    display: block;
+  }
+
+  a#navicon:hover + ul,
+  ul:hover {
+    display: block;
+  }
+
+  a.navigationBar-links {
+    color: black;
+  }
+
+  div.navigationBar {
+    flex-direction: column;
+  }
+
+  div#section-image {
+    margin-top: 50px;
+  }
+
+  div#clipShape1 {
+    clip-path: polygon(0 0, 100% 0, 100% 120px, 0 275px);
   }
 }
